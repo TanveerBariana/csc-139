@@ -47,7 +47,7 @@ int CreateThreads(){
 void GO() {
   CreateThreads();
   for(count=0;count<n;count++){
-    GetStatus(count)
+    GetStatus(count);
   }
 }
 int main(){
