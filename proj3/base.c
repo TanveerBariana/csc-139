@@ -31,14 +31,14 @@ int CreateThreads(){
     remain=n;
     //arrival time and burst time
     for(count=0;count<n;count++){
-        &at[0]=0;
-        &bt[0]=9;
-        &at[1]=1;
-        &bt[1]=5;
-        &at[2]=2;
-        &bt[2]=3;
-        &at[3]=3;
-        &bt[3]=4;
+        &at[0]<<0;
+        &bt[0]<<9;
+        &at[1]<<1;
+        &bt[1]<<5;
+        &at[2]<<2;
+        &bt[2]<<3;
+        &at[3]<<3;
+        &bt[3]<<4;
         rt[count]=bt[count];
     }
     return 0;
