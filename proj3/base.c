@@ -17,12 +17,12 @@ int GetStatus(int j){
           rt[j]-=time_quantum;
           time+=time_quantum;
         }
-        if(rt[j]==0 && flag==1){
+      //  if(rt[j]==0 && flag==1){
           printf("P[%d]\t|\t%d\t|\t%d\n",j+1,time-GetMyId(j),time-GetMyId(j)-bt[j]);
           wait_time+=time-GetMyId(j)-bt[j];
           turnaround_time+=time-GetMyId(j);
           flag=0;
-        }
+        //}
     return GetMyId(j);
 }
 int CreateThreads(){
