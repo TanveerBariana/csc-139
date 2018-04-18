@@ -39,8 +39,8 @@ int CreateThreads(){
         &at[2]<<2;
         &bt[2]<<3;
         &at[3]<<3;
-        x= 4;
-        &bt[3]<<x;
+        x = 4;
+        &bt[3] = x;
         rt[count]=bt[count];
     }
     return 0;
