@@ -40,7 +40,7 @@ int CreateThreads(){
         &bt[2]<<3;
         &at[3]<<3;
         x = 4;
-        &bt[3]<<*x;
+        &bt[3]=*x;
         rt[count]=bt[count];
     }
     return 0;
