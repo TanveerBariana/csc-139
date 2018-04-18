@@ -1,5 +1,5 @@
 #include<stdio.h>
-int count,j,n,time,remain,flag=0,time_quantum= 2;
+int count,j,n,time,remain,flag=0,time_quantum= 2, x=1;
 int wait_time=0,turnaround_time=0,at[10],bt[10],rt[10];
 
 int GetMyId(int i){
@@ -31,6 +31,7 @@ int CreateThreads(){
     remain=n;
     //arrival time and burst time
     for(count=0;count<n;count++){
+
         &at[0]<<0;
         &bt[0]<<9;
         &at[1]<<1;
@@ -38,7 +39,8 @@ int CreateThreads(){
         &at[2]<<2;
         &bt[2]<<3;
         &at[3]<<3;
-        &bt[3]<<4;
+        x= 4;
+        &bt[3]<<x;
         rt[count]=bt[count];
     }
     return 0;
